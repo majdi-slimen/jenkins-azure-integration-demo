@@ -15,7 +15,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("<<Your DockerHub username>>/hello:${env.BUILD_ID}")
+                    myapp = docker.build("majdi14/hello:${env.BUILD_ID}")
                 }
             }
         }
